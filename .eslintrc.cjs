@@ -7,11 +7,9 @@ module.exports = {
     es6: true,
   },
   globals: {},
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['prettier'],
   extends: [
-    '@tianz/eslint-config',
-    '@tianz/eslint-config/typescript',
+    '@slothkit/eslint-config',
     'prettier',
   ],
   parserOptions: {
@@ -20,21 +18,7 @@ module.exports = {
     project: './tsconfig.json',
     tsconfigRootDir: __dirname,
   },
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
   rules: {
     'prettier/prettier': 1,
-    'no-undefined': 0,
   },
-  overrides: [
-    {
-      files: ['*.{test,spec}.ts{,x}'],
-      rules: {
-        'import/no-extraneous-dependencies': [1, { packageDir: './' }],
-      },
-    },
-  ],
 }
