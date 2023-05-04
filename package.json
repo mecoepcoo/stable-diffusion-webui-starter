@@ -1,8 +1,8 @@
 {
-  "name": "stable-diffusion-webui-starter-b",
-  "productName": "stable-diffusion-webui-starter-b",
+  "name": "stable-diffusion-webui-starter",
+  "productName": "stable-diffusion-webui-starter",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "stable-diffusion-webui fast installer and launcher",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
